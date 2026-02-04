@@ -1,0 +1,13 @@
+'use strict';
+
+import express from 'express';
+import routes from './routes.js';
+
+const app = express();
+const port = 3000;
+
+app.use('/', routes);
+app.use('/dashboard', routes);
+app.use('/error', routes);
+app.use('/about', routes);
+app.listen(port, () => console.log(`Express app running on port ${port}!`));
