@@ -1,22 +1,32 @@
-{{> menu id ="about"}}
+{{> menu id="about"}}
 
-<div class="ui centered card">
-    <div class="image">
-        <img src="/stevie.jpg" alt="stevie image">
-    </div>
-    <div class="content">
-        <a class="header">Stevie</a>
-        <div class="meta">
-            <span class="date">Joined in 2023  </span>
+<section class="ui left aligned middle aligned segment">
+
+    <h2>About the Playlist App</h2>
+    <p>
+        More information about the app
+    </p>
+
+
+    <div class="ui centered card">
+        <div class="image">
+            <img src="{{emps.image}}">
         </div>
-        <div class="description">
-            is an living in Dublin, Ireland. He is a software developer and has a passion for music and playlists.
+        <div class="content">
+            <a class="header">{{emps.fullname}}</a>
+            <div class="meta">
+                <span class="date">Joined in {{emps.joined}}</span>
+            </div>
+            <div class="description">
+                {{emps.name}} is an {{emps.job}} living in {{emps.city}}.
+            </div>
+        </div>
+        <div class="extra content">
+            <a>
+                <i class="user icon"></i>
+                {{emps.mates}} contacts
+            </a>
         </div>
     </div>
-    <div class="extra content">
-        <a>
-            <i class="user icon"></i>
-            contacts
-        </a>
-    </div>
-</div>
+
+</section>

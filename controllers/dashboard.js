@@ -1,17 +1,39 @@
 'use strict';
-
+import { v4 as uuidv4 } from 'uuid';
 import logger from "../utils/logger.js";
+import playlistStore from "../models/playlist-store.js";
 
 const dashboard = {
     createView(request, response) {
         logger.info("Dashboard page loading!");
 
         const viewData = {
-            title: "Playlist App Dashboard"
+            title: "Playlist App Dashboard",
+            playlists: playlistStore.getAllPlaylists()
         };
-
+        logger.debug(viewData.playlists);
         response.render('dashboard', viewData);
     },
+
+    addPlaylist(request, response) {
+        const timestamp = new Date();
+        const newPlayList = {
+            id: uuidv4(),
+            title: request.body.title,
+            date: timestamp,
+            songs: [],
+            rating: request.body.rating,
+        };
+        playlistStore.addPlaylist(newPlayList);
+        response.redirect('/dashboard');
+    },
+    deletePlaylist(request, response) {
+        const playlistId = request.params.id;
+        logger.debug(`Deleting Playlist ${playlistId}`);
+        playlistStore.removePlaylist(playlistId);
+        response.redirect("/dashboard");
+    },
+
 };
 
 export default dashboard;

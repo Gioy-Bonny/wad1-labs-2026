@@ -1,0 +1,55 @@
+{
+  "playlistCollection": [
+    {
+      "id": "01",
+      "title": "Beethoven Sonatas",
+      "date": "2026-03-18T14:41:13.264Z",
+      "rating": 3,
+      "songs": [
+        {
+          "id": "04",
+          "title": "Piano Sonata No. 3",
+          "artist": "Beethoven"
+        },
+        {
+          "id": "05",
+          "title": "Piano Sonata No. 7",
+          "artist": "Beethoven"
+        },
+        {
+          "id": "06",
+          "title": "Piano Sonata No. 10",
+          "artist": "Beethoven"
+        }
+      ]
+    },
+    {
+      "id": "8f4f8bb7-54ce-4a4e-a50d-e7939d6ba0b8",
+      "title": "ttt",
+      "date": "2026-03-18T14:41:13.264Z",
+      "songs": [],
+      "rating": ""
+    },
+    {
+      "id": "8e4f3a3e-7180-42a6-ac8a-51a4c8f5fe8b",
+      "title": "kk",
+      "date": "2026-03-18T14:43:06.191Z",
+      "songs": [],
+      "rating": "0"
+    },
+    {
+      "id": "8dd440cd-aa8f-4b81-bb52-e8fe7ecf6be7",
+      "title": "kkk",
+      "date": "2026-03-18T14:43:12.652Z",
+      "songs": [],
+      "rating": "0"
+    },
+    {
+      "id": "53bc2e71-6cf2-4427-bfa0-af388a7f10d7",
+      "title": "jhjjj",
+      "date": "2026-03-18T14:49:00.904Z",
+      "songs": [],
+      "rating": "0"
+    }
+  ]
+}
