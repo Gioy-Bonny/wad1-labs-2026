@@ -15,7 +15,7 @@
 
         <div class="ui sixteen wide column">
 
-            <div class="ui centered three statistics">
+            <div class="ui centered four statistics">
                 <div class="ui statistic">
                     <div class="value">
                         <i class="microphone icon"></i>
@@ -42,11 +42,22 @@
                         Average songs per <br> playlist: {{displayAverage}}
                     </div>
                 </div>
+
+                <div class="ui teal statistic">
+                    <div class="value">
+                        <i class="clock icon"></i>
+                    </div>
+                    <div class="label">
+                        Last Added Playlist: {{lastAddedPlaylist}}
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
         <div class="ui sixteen wide column">
-            <div class="ui centered two statistics">
+            <div class="ui centered three statistics">
 
                 <div class="ui yellow statistic">
                     <div class="value">
@@ -54,13 +65,6 @@
                     </div>
                     <div class="label">
                         Highest Rated playlists: {{highest}} stars
-                        <table>
-                            {{#each displayFav}}
-                            <tr>
-                                <td>{{this}}</td>
-                            </tr>
-                            {{/each}}
-                        </table>
                     </div>
                 </div>
 
@@ -73,7 +77,14 @@
                     </div>
                 </div>
 
-                
+                <div class="ui purple statistic">
+                    <div class="value">
+                        <i class="user icon"></i>
+                    </div>
+                    <div class="label">
+                        Your Playlists: {{userNum}}
+                    </div>
+                </div>
 
             </div>
         </div>

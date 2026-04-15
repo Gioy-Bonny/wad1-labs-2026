@@ -3,6 +3,8 @@ console.log("Hello from the Web App Dev lab!");
 $('.ui.rating')
     .rating();
 
-function setRating(){
-    $('.ui.rating').rating('setting', 'onRate')
-}
+$('.ui.rating').rating({
+    onRate: function (value) {
+        $('#ratingValue').val(value);
+    }
+})

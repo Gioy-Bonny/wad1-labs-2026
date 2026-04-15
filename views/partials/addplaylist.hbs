@@ -3,14 +3,8 @@
         <label>Title</label>
         <input placeholder="Title" type="text" name="title" autofocus required>
         <div>
-            <input type="hidden" id="ratingInput" name="rating" value="0">
-            <span
-                class="ui yellow rating"
-                data-icon="star"
-                data-max-rating="5"
-                onclick="setRating()"
-                >
-            </span>
+                <div class="ui yellow star rating" data-max-rating="5" id="galleryRating"></div>
+                <input type="hidden" id="ratingValue" name="rating">
         </div>
     </div>
     <button class="ui blue submit button">Add Playlist</button>
