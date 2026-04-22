@@ -8,20 +8,24 @@
       "rating": "4"
     },
     {
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "id": "51f3e137-0447-4d60-bed7-261ce1f16758",
-      "title": "jjjj",
-      "rating": 4,
-      "songs": [],
-      "date": "2026-04-15T12:35:22.917Z"
-    },
-    {
       "userid": "926e8e8b-b4f0-42e2-9acc-c0d326d63a38",
       "id": "dfcaa8f2-802f-4f5f-b8dc-d92a8e831d7e",
       "title": "qqqq",
       "rating": 4,
       "songs": [],
       "date": "2026-04-15T13:10:41.542Z"
+    },
+    {
+      "id": "95e65b74-7f11-4fc9-825d-639fde3fde5d",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "eeee",
+      "rating": 3,
+      "songs": [],
+      "date": "2026-04-22T12:04:27.451Z",
+      "picture": {
+        "url": "http://res.cloudinary.com/dbhig1si4/image/upload/v1776859473/cczbqshpoeker94lnx8j.jpg",
+        "public_id": "cczbqshpoeker94lnx8j"
+      }
     }
   ]
 }
